@@ -50,9 +50,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp INS  &kp HOME  &trans          &trans        &trans    &kp MINUS  &kp EQUAL       &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp RIGHT_ARROW  &trans
-&trans  &trans   &trans    &trans          &trans        &trans    &trans     &kp LEFT_ARROW  &kp NON_US_BACKSLASH  &kp QUESTION       &trans           &trans
-&trans  &trans   &trans    &kp DOWN_ARROW  &kp UP_ARROW  &trans    &trans     &trans          &trans                &trans             &trans           &trans
+&trans  &kp INS  &kp HOME  &trans          &trans        &trans    &kp MINUS  &kp EQUAL       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_ARROW  &trans
+&trans  &trans   &trans    &trans          &trans        &trans    &trans     &kp LEFT_ARROW  &kp BACKSLASH     &kp QUESTION       &trans           &trans
+&trans  &trans   &trans    &kp DOWN_ARROW  &kp UP_ARROW  &trans    &trans     &trans          &trans            &trans             &trans           &trans
                            &trans          &trans        &trans    &trans     &trans          &trans
             >;
         };
