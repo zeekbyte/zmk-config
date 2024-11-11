@@ -49,10 +49,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans        &kp INS  &kp HOME  &kp PRINTSCREEN  &trans        &trans    &trans  &trans          &kp MINUS         &kp EQUAL          &kp RIGHT_ARROW  &trans
-&kp CAPSLOCK  &trans   &trans    &trans           &trans        &trans    &trans  &kp LEFT_ARROW  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans           &trans
-&trans        &trans   &trans    &kp DOWN_ARROW   &kp UP_ARROW  &trans    &trans  &trans          &kp BACKSLASH     &kp SLASH          &trans           &trans
-                                 &trans           &trans        &trans    &trans  &trans          &trans
+&trans  &kp INS  &kp HOME  &kp PRINTSCREEN  &kp CAPSLOCK  &trans    &trans  &trans          &kp MINUS         &kp EQUAL          &kp RIGHT_ARROW  &trans
+&trans  &trans   &trans    &trans           &trans        &trans    &trans  &kp LEFT_ARROW  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans           &trans
+&trans  &trans   &trans    &kp DOWN_ARROW   &kp UP_ARROW  &trans    &trans  &trans          &kp BACKSLASH     &kp SLASH          &trans           &trans
+                           &trans           &trans        &trans    &trans  &trans          &trans
             >;
         };
     };
