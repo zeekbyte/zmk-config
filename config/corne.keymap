@@ -53,7 +53,7 @@
         layer_3 {
             bindings = <
 &trans  &kp EXCLAMATION  &kp AT_SIGN    &kp POUND      &kp DOLLAR     &kp PERCENT             &kp CARET              &kp AMPS                  &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &trans           &kp LS(GRAVE)  &kp LS(MINUS)  &kp LS(EQUAL)  &kp LS(LEFT_BRACKET)    &kp LS(RIGHT_BRACKET)  &kp LS(NON_US_BACKSLASH)  &kp LS(SLASH)  &trans                &trans                 &trans
+&none   &none            &kp LS(GRAVE)  &kp LS(MINUS)  &kp LS(EQUAL)  &kp LS(LEFT_BRACKET)    &kp LS(RIGHT_BRACKET)  &kp LS(NON_US_BACKSLASH)  &kp LS(SLASH)  &none                 &none                  &none
 &trans  &trans           &kp GRAVE      &kp MINUS      &kp EQUAL      &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp NON_US_BACKSLASH      &kp SLASH      &trans                &trans                 &trans
                                         &trans         &trans         &trans                  &trans                 &trans                    &trans
             >;
