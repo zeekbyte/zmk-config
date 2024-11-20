@@ -11,7 +11,16 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        normal {
+            bindings = <
+&trans  &trans  &trans  &trans          &trans        &trans    &trans  &trans          &trans  &trans  &kp RIGHT_ARROW  &trans
+&trans  &trans  &trans  &trans          &trans        &mo 1     &trans  &kp LEFT_ARROW  &trans  &trans  &trans           &trans
+&trans  &trans  &trans  &kp DOWN_ARROW  &kp UP_ARROW  &trans    &trans  &trans          &trans  &trans  &trans           &trans
+                        &trans          &trans        &trans    &trans  &trans          &trans
+            >;
+        };
+
+        instert {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -19,10 +28,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE               &kp SQT        &kp COMMA  &kp PERIOD        &kp P  &kp Y           &kp F      &kp G  &kp C  &kp R  &kp L  &kp BACKSPACE
-&kp TAB                  &kp A          &kp O      &kp E             &kp U  &kp I           &kp D      &kp H  &kp T  &kp N  &kp S  &kp ENTER
-&mt LEFT_SHIFT LEFT_GUI  &kp SEMICOLON  &kp Q      &kp J             &kp K  &kp X           &kp B      &kp M  &kp W  &kp V  &kp Z  &mt RIGHT_SHIFT CAPSLOCK
-                                                   &kp LEFT_CONTROL  &mo 1  &kp LEFT_ALT    &kp SPACE  &mo 2  &mo 3
+&kp ESCAPE      &kp SQT        &kp COMMA  &kp PERIOD        &kp P         &kp Y           &kp F      &kp G  &kp C  &kp R  &kp L  &kp BACKSPACE
+&kp TAB         &kp A          &kp O      &kp E             &kp U         &kp I           &kp D      &kp H  &kp T  &kp N  &kp S  &kp ENTER
+&kp LEFT_SHIFT  &kp SEMICOLON  &kp Q      &kp J             &kp K         &kp X           &kp B      &kp M  &kp W  &kp V  &kp Z  &kp RIGHT_SHIFT
+                                          &kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT    &kp SPACE  &mo 2  &mo 0
             >;
         };
 
@@ -37,31 +46,16 @@
 &kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6  &kp N7  &kp N8  &kp N9   &kp N0   &kp DELETE
 &kp F1     &kp F2  &kp F3  &kp F4  &kp F5  &kp F6    &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
 &trans     &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
-                           &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        raise_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
-            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
-            bindings = <
-&trans        &kp INS  &kp HOME  &kp PRINTSCREEN  &trans        &trans    &trans  &trans          &kp MINUS         &kp EQUAL          &kp RIGHT_ARROW  &trans
-&kp CAPSLOCK  &trans   &trans    &trans           &trans        &trans    &trans  &kp LEFT_ARROW  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans           &trans
-&trans        &trans   &trans    &kp DOWN_ARROW   &kp UP_ARROW  &trans    &trans  &trans          &kp BACKSLASH     &kp SLASH          &trans           &trans
-                                 &trans           &trans        &trans    &trans  &trans          &trans
+                           &trans  &mo 3   &to 0     &trans  &trans  &trans
             >;
         };
 
         layer_3 {
             bindings = <
-&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp POUND  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPS  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &trans           &trans       &trans     &trans      &trans         &trans     &trans    &trans        &trans                &trans                 &trans
-&trans  &trans           &trans       &trans     &trans      &trans         &trans     &trans    &trans        &trans                &trans                 &trans
-                                      &trans     &trans      &trans         &trans     &trans    &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN    &kp POUND      &kp DOLLAR     &kp PERCENT             &kp CARET              &kp AMPS                  &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &trans           &kp LS(GRAVE)  &kp LS(MINUS)  &kp LS(EQUAL)  &kp LS(LEFT_BRACKET)    &kp LS(RIGHT_BRACKET)  &kp LS(NON_US_BACKSLASH)  &kp LS(SLASH)  &trans                &trans                 &trans
+&trans  &trans           &kp GRAVE      &kp MINUS      &kp EQUAL      &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp NON_US_BACKSLASH      &kp SLASH      &trans                &trans                 &trans
+                                        &trans         &trans         &trans                  &trans                 &trans                    &trans
             >;
         };
     };
