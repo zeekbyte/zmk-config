@@ -14,7 +14,7 @@
         normal {
             bindings = <
 &trans  &trans  &trans  &trans          &trans        &trans    &trans  &trans          &trans  &trans  &kp RIGHT_ARROW  &trans
-&trans  &trans  &trans  &trans          &trans        &mo 1     &trans  &kp LEFT_ARROW  &trans  &trans  &trans           &trans
+&trans  &trans  &trans  &trans          &trans        &to 1     &trans  &kp LEFT_ARROW  &trans  &trans  &trans           &trans
 &trans  &trans  &trans  &kp DOWN_ARROW  &kp UP_ARROW  &trans    &trans  &trans          &trans  &trans  &trans           &trans
                         &trans          &trans        &trans    &trans  &trans          &trans
             >;
@@ -31,7 +31,7 @@
 &kp ESCAPE      &kp SQT        &kp COMMA  &kp PERIOD        &kp P         &kp Y           &kp F      &kp G  &kp C  &kp R  &kp L  &kp BACKSPACE
 &kp TAB         &kp A          &kp O      &kp E             &kp U         &kp I           &kp D      &kp H  &kp T  &kp N  &kp S  &kp ENTER
 &kp LEFT_SHIFT  &kp SEMICOLON  &kp Q      &kp J             &kp K         &kp X           &kp B      &kp M  &kp W  &kp V  &kp Z  &kp RIGHT_SHIFT
-                                          &kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT    &kp SPACE  &mo 2  &mo 0
+                                          &kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT    &kp SPACE  &mo 2  &to 0
             >;
         };
 
