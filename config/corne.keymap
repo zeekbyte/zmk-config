@@ -16,7 +16,7 @@
 &trans  &trans  &trans  &trans          &trans        &trans    &trans  &trans          &trans  &trans  &kp RIGHT_ARROW  &trans
 &trans  &trans  &trans  &trans          &trans        &to 1     &trans  &kp LEFT_ARROW  &trans  &trans  &trans           &trans
 &trans  &trans  &trans  &kp DOWN_ARROW  &kp UP_ARROW  &trans    &trans  &trans          &trans  &trans  &trans           &trans
-                        &trans          &trans        &trans    &trans  &trans          &trans
+                        &trans          &kp LEFT_GUI  &trans    &trans  &trans          &trans
             >;
         };
 
