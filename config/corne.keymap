@@ -11,15 +11,6 @@
     keymap {
         compatible = "zmk,keymap";
 
-        normal {
-            bindings = <
-&trans  &trans  &trans  &trans          &trans        &trans    &trans  &trans          &trans  &trans  &kp RIGHT_ARROW  &trans
-&trans  &trans  &trans  &trans          &trans        &to 1     &trans  &kp LEFT_ARROW  &trans  &trans  &trans           &kp ENTER
-&trans  &trans  &trans  &kp DOWN_ARROW  &kp UP_ARROW  &trans    &trans  &trans          &trans  &trans  &trans           &trans
-                        &trans          &kp LEFT_GUI  &trans    &trans  &trans          &trans
-            >;
-        };
-
         instert {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
@@ -31,7 +22,7 @@
 &kp ESCAPE      &kp SQT        &kp COMMA  &kp PERIOD        &kp P         &kp Y           &kp F      &kp G  &kp C  &kp R  &kp L  &kp BACKSPACE
 &kp TAB         &kp A          &kp O      &kp E             &kp U         &kp I           &kp D      &kp H  &kp T  &kp N  &kp S  &kp ENTER
 &kp LEFT_SHIFT  &kp SEMICOLON  &kp Q      &kp J             &kp K         &kp X           &kp B      &kp M  &kp W  &kp V  &kp Z  &kp RIGHT_SHIFT
-                                          &kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT    &kp SPACE  &mo 2  &to 0
+                                          &kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT    &kp SPACE  &mo 1  &mo 2
             >;
         };
 
@@ -46,7 +37,7 @@
 &kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6  &kp N7  &kp N8  &kp N9   &kp N0   &kp DELETE
 &kp F1     &kp F2  &kp F3  &kp F4  &kp F5  &kp F6    &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
 &trans     &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
-                           &trans  &mo 3   &mo 4     &trans  &trans  &trans
+                           &trans  &trans  &mo 3     &trans  &trans  &trans
             >;
         };
 
@@ -59,7 +50,7 @@
             >;
         };
 
-        layer_4 {
+        visual {
             bindings = <
 &trans  &trans  &trans  &trans          &trans        &trans    &trans  &trans          &trans  &trans  &kp RIGHT_ARROW  &trans
 &trans  &trans  &trans  &trans          &trans        &trans    &trans  &kp LEFT_ARROW  &trans  &trans  &trans           &kp ENTER
