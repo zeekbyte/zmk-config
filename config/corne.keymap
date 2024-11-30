@@ -11,7 +11,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        instert {
+        insert {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -19,41 +19,26 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE      &kp SQT        &kp COMMA  &kp PERIOD        &kp P         &kp Y        &kp F  &kp G  &kp C          &kp R  &kp L  &kp BACKSPACE
-&kp TAB         &kp A          &kp O      &kp E             &kp U         &kp I        &kp D  &kp H  &kp T          &kp N  &kp S  &kp ENTER
-&kp LEFT_SHIFT  &kp SEMICOLON  &kp Q      &kp J             &kp K         &kp X        &kp B  &kp M  &kp W          &kp V  &kp Z  &kp RIGHT_SHIFT
-                                          &kp LEFT_CONTROL  &kp LEFT_WIN  &kp SPACE    &mo 1  &mo 2  &kp RIGHT_ALT
+&kp ESCAPE                    &kp SQT        &kp COMMA  &kp PERIOD             &kp P         &kp Y        &kp F      &kp G  &kp C  &kp R  &kp L  &kp TAB
+&kp LEFT_SHIFT                &kp A          &kp O      &kp E                  &kp U         &kp I        &kp D      &kp H  &kp T  &kp N  &kp S  &kp RIGHT_SHIFT
+&mt LEFT_CONTROL PRINTSCREEN  &kp SEMICOLON  &kp Q      &kp J                  &kp K         &kp X        &kp B      &kp M  &kp W  &kp V  &kp Z  &kp BACKSPACE
+                                                        &mt LEFT_ALT CAPSLOCK  &kp LEFT_WIN  &kp SPACE    &kp ENTER  &mo 1  &mo 2
             >;
         };
 
-        lower_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
-            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
+        lower {
             bindings = <
-&trans  &kp N1        &kp N2           &kp N3  &kp N4  &kp N5    &kp N6  &kp N7  &kp N8  &kp N9   &kp N0   &kp DELETE
-&kp F1  &kp F2        &kp F3           &kp F4  &kp F5  &kp F6    &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &kp CAPSLOCK  &kp PRINTSCREEN  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
-                                       &trans  &trans  &mo 3     &trans  &trans  &trans
-            >;
-        };
-
-        layer_3 {
-            bindings = <
-&kp GRAVE  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp STAR  &kp LPAR  &kp RPAR  &kp BACKSPACE
-&kp TILDE  &none     &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH  &kp FSLH
-&trans     &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC  &kp RBRC  &kp PIPE  &kp QMARK
-                             &trans    &trans    &trans       &trans     &trans     &trans
+&kp F1  &kp F2        &kp F3        &kp F4        &kp F5        &kp F6          &kp F7        &kp F8     &kp F9            &kp F10            &kp F11        &kp F12
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5          &kp NUMBER_6  &kp N7     &kp N8            &kp N9             &kp N0         &trans
+&trans  &trans        &trans        &trans        &kp GRAVE     &kp QUESTION    &kp MINUS     &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &kp DELETE
+                                    &trans        &trans        &trans          &trans        &trans     &trans
             >;
         };
 
         visual {
             bindings = <
 &trans  &trans  &trans  &trans          &trans        &trans    &trans  &trans          &trans  &trans  &kp RIGHT_ARROW  &trans
-&trans  &trans  &trans  &trans          &trans        &trans    &trans  &kp LEFT_ARROW  &trans  &trans  &trans           &kp ENTER
+&trans  &trans  &trans  &trans          &trans        &trans    &trans  &kp LEFT_ARROW  &trans  &trans  &trans           &trans
 &trans  &trans  &trans  &kp DOWN_ARROW  &kp UP_ARROW  &trans    &trans  &trans          &trans  &trans  &trans           &trans
                         &trans          &trans        &trans    &trans  &trans          &trans
             >;
